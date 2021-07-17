@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+*{box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.034);}
+
+/* Estilo Geral */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header */
+.menu{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.nav__list{
+    display: flex;
+} 
+.nav__link{
+    padding: 20px;
+}
+/* sobre */
+.sobre{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
