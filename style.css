@@ -16,7 +16,7 @@ a{
 /* Header */
 .menu{
     display: flex;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -29,6 +29,6 @@ a{
 /* sobre */
 .sobre{
     display: flex;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
