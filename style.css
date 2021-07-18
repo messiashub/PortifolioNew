@@ -3,7 +3,7 @@
 *::before{
     box-sizing: border-box;
 }
-*{box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.582);}
+*{box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);}
 
 /* Estilo Geral */
 li{
@@ -32,20 +32,22 @@ a{
     max-width: 1100px;
     margin: 0 auto;
     flex-wrap: wrap;
+    
     /* align-items: center; */
     /* justify-content: center; */
     
 }
-.description{
+.sobre__description{
     /* display: flex; */
     /* flex-direction: column; */
     flex: 6 1 160px;
     flex-wrap: wrap;
 }
-.sobre img{
+.sobre__img{
+    width: 340px;
     /* display: block; */
   /*   min-width: 300px; */
-  flex: 1 1 250px;
+  /* flex: 1 1 250px; */
 }
 .conhecimentos{
     max-width: 1100px;
@@ -53,15 +55,17 @@ a{
     margin: 0 auto;
     /* justify-content: center; */
 }
-.tecnologia__titulo{
+.conhecimentos__titulo{
     display: flex;
     justify-content: center;
 }
 .tecnologias{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .tecnologias li{
-     padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    width: 105px;
+    padding: 0px 5px 0px 5px;
 }
