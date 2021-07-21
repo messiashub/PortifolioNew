@@ -1,9 +1,13 @@
 *,
 *::after,
 *::before{
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
-*{box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);
+}
 
 /* Estilo Geral */
 li{
@@ -12,25 +16,52 @@ li{
 a{
     text-decoration: none;
 }
+h3{
+    font-size: 1.7rem;
+}
+
+:root{
+    --colorBlue-dark:#0A71C6;
+    --colorBlue-ligth:#41A4F5;
+
+}
 
 /* Header */
+.menu-bg{
+    background-color: var(--colorBlue-dark);
+}
 .menu{
     display: flex;
     max-width: 1100px;
+    height: 80px;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
+.menu__logo{
+    color: white;
+    font-size: 2rem;
+}
+
 .nav__list{
     display: flex;
 } 
 .nav__link{
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
     padding:0px 20px;
+    margin: 5px;
 }
 /* sobre */
+.sobre-bg{
+    background-color: var(--colorBlue-ligth);
+}
 .sobre{
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 30px 0px;
     flex-wrap: wrap;
     
     /* align-items: center; */
@@ -42,6 +73,23 @@ a{
     /* flex-direction: column; */
     flex: 6 1 160px;
     flex-wrap: wrap;
+    
+}
+.sobre__description h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+.sobre__description h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.sobre__description p{
+    display: flex;
+    text-align: center;
+    color: white;
 }
 .sobre__img{
     width: 340px;
@@ -59,22 +107,38 @@ a{
     display: flex;
     justify-content: center;
 }
+.conhecimentos__titulo h3{
+    color: white;
+    padding: 10px;
+}
+
 .tecnologias{
     display: flex;
     justify-content: center;    
 }
 .tecnologias li{
     display: flex;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px 10px;
+    
     justify-content: center;
     width: 105px;
-    padding: 0px 5px 0px 5px;
+    padding: 10px;
 }
 /* Portifolio */
+.portifolio{
+    background-image: linear-gradient(to bottom, rgb(246, 255, 255),rgb(136, 221, 255));
+}
 .portifolio__titulo{
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
     justify-content: center;
+}
+.portifolio__titulo h3{
+    margin: 20px;
+    padding: 10px;
 }
 .portifolio-container{
     
@@ -90,12 +154,20 @@ a{
 .portifolio__img{
     display: flex;
     width: 100%;
-    justify-content: center;
+
+    justify-content: center;   
+}
+.portifolio__img img{
+    border: 1px solid rgba(144, 144, 144, 0.24);
+}
+.portifolio-card{
+   
     
 }
 .portifolio-card span{
     display: flex;
     justify-content: center;
+
 }
 
 /* Footer */
