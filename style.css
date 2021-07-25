@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *,
 *::after,
@@ -13,20 +14,38 @@
 }
 
 /* Estilo Geral */
+body{
+    background-image:linear-gradient(to bottom, #cdedf370, #bfeff894 );
+}
+
+
+
 li{
     list-style: none;
 }
 a{
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
+a:hover{
+    color: var(--colorBlue-ligth);
+}
 h3{
+    color: var(--colorBlue-ligth);
+    font-family: 'Lato',sans-serif;
     font-size: 1.7rem;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(--colorBlue-dark);
+    margin: 2px;
 }
 
 :root{
     --colorBlue-dark:#0A71C6;
-    --colorBlue-ligth:#41A4F5;
-    --colorGray: #404A53
+    --colorBlue-ligth:rgb(0, 217, 255);
+    --colorGray: #404A53;
 
 }
 
@@ -37,13 +56,13 @@ h3{
 .menu{
     display: flex;
     max-width: 1100px;
-    height: 80px;
+    height: 70px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
 .menu__logo{
-    color: white;
+    color: rgb(250, 250, 250);
     font-size: 2rem;
 }
 
@@ -60,7 +79,7 @@ h3{
 }
 /* sobre */
 .sobre-bg{
-    background-color:#FFFFFF;
+    /* background-color:#FFFFFF; */
 }
 .sobre{
     display: flex;
@@ -83,6 +102,9 @@ h3{
     flex-wrap: wrap;
     
 }
+.sobre__description .sobre__description-titulo p{
+    color: var(--colorBlue-ligth);
+}
 .sobre__description-name{
     display: flex;
     width:100%;
@@ -90,25 +112,28 @@ h3{
     padding:0px 5px;
     justify-content: center;
     /* font-family: 'Raleway', sans-serif;   */ 
+    /* font-family: 'Lato', sans-serif; */
+    font-family:'Lato', sans-serif; 
+    
     
     font-size: 2.5rem;
     /* font-weight: 900; */
-    line-height: 45px;
+    line-height: 60px;
     color: rgb(90, 90, 90);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     
 }
 .sobre__description-titulo{
     display: flex;
-    max-width: 584px;
+    max-width: 460px;
     margin: 0 auto;
     margin-bottom: 10px;
     padding:0px 5px;
     font-size: 1.3rem;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato',sans-serif;
     justify-content: flex-end;
-    color: rgb(90, 90, 90);
+    /* color: rgb(21, 241, 248); */
 }
 .sobre__description-texto{
     width: 100%;
@@ -192,9 +217,10 @@ h3{
     width: 105px;
     padding: 10px;
 }
+
 /* Portifolio */
 .portifolio{
-    background-image: linear-gradient(to bottom, rgb(246, 255, 255),rgba(255, 166, 151, 0.507));
+    /* background-image: linear-gradient(to bottom, rgb(246, 255, 255),rgba(255, 166, 151, 0.507)); */
 }
 .portifolio__titulo{
     display: flex;
