@@ -10,7 +10,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);
+   /*  box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116); */
 }
 
 /* Estilo Geral */
@@ -22,7 +22,7 @@ li{
     list-style: none;
 }
 a{
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font2);
     font-weight: bold;
     text-decoration: none;
 }
@@ -34,6 +34,10 @@ h3{
     font-family: 'Lato',sans-serif;
     font-size: 1.7rem;
 }
+h4{
+    font-family: var(--font1);
+    font-weight: lighter;
+}
 hr{
     border: none;
     width: 1500px;
@@ -44,9 +48,13 @@ hr{
 }
 
 :root{
+    /* color */
     --colorBlue-dark:rgb(4,139,162);
     --colorBlue-ligth:rgb(0, 217, 255);
     --colorGray: #404A53;
+    /* font */
+    --font1: 'Raleway', sans-serif;
+    --font2: 'Lato', sans-serif;
 }
 
 /* Header */
@@ -101,7 +109,7 @@ hr{
     margin: 0 auto;
     padding:0px 5px;
     justify-content: center;
-    font-family:'Lato', sans-serif; 
+    font-family:var(--font2);
     font-size: 2.5rem;
     line-height: 60px;
     color: rgb(90, 90, 90);
@@ -114,7 +122,7 @@ hr{
     padding:0px 5px;
     font-size: 1.3rem;
     font-weight: bold;
-    font-family: 'Lato',sans-serif;
+    font-family: var(--font2);
     justify-content: flex-end;
 }
 .sobre__description-texto{
@@ -211,13 +219,42 @@ hr{
 }
 .portifolio-container .portifolio-card .portifolio-content{
     position: absolute;
+    padding: 30px 0px 30px 0px;
     bottom: 412px;
     width: 100%;
     height: 100%;
     z-index: 10;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(30%);
     transition: bottom 0.6s;
+    
     /* transition-delay: 0.8s; */
+}
+.portifolio-contentText{
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.portifolio-content .linha2{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.541);
+    height: 1px;
+    border: none;
+    margin: 5px 10px 5px 10px;
+    width: 94%;
+}
+.portifolio-content ul li{
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-family: var(--font1);
+}
+.portifolio-content .portifolio-btn{
+    display: flex;
+    justify-content: center;
+    /* font-family: var(--font1); */
+}
+.portifolio-btn button{
+    font-family: var(--font1);
+    font-weight: bolder;
 }
 
 
