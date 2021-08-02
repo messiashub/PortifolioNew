@@ -10,7 +10,7 @@
 *{
     margin: 0px;
     padding: 0px;
-   /*  box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116); */
+    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);
 }
 
 /* Estilo Geral */
@@ -32,7 +32,7 @@ a:hover{
 h3{
     color: var(--colorBlue-dark);
     font-family: 'Lato',sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 h4{
     font-family: var(--font1);
@@ -233,7 +233,7 @@ hr{
     width: 100%;
     height: 100%;
     z-index: 10;
-    backdrop-filter: brightness(30%);
+    backdrop-filter: brightness(25%);
     transition: bottom 0.6s;
     
     /* transition-delay: 0.8s; */
@@ -255,15 +255,19 @@ hr{
     margin-left: 10px;
     color: rgb(255, 255, 255);
     font-family: var(--font1);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 .portifolio-content .portifolio-btn{
     display: flex;
     justify-content: center;
-    /* font-family: var(--font1); */
+    margin: 20px;
 }
 .portifolio-btn button{
     font-family: var(--font1);
     font-weight: bolder;
+    font-size: 1rem;
+    padding: 5px 15px;
 }
 
 
