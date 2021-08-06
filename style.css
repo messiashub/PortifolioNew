@@ -30,9 +30,9 @@ a:hover{
     color: var(--colorBlue-dark);
 }
 h3{
-    color: var(--colorBlue-dark);
+   /*  color: var(--colorBlue-dark); */
     font-family: var(--font1);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 h4{
     font-family: var(--font1);
@@ -203,6 +203,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
     margin: 0 auto;
+    padding: 20px;
     justify-content: center;
     gap: 20px;
     
@@ -210,7 +211,7 @@ hr{
 .portifolio-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 10px;
 }
@@ -222,6 +223,21 @@ hr{
     object-fit: cover;
     width: 100%;
 }
+.portifolio-texto{
+   /*  max-width: 300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 20px;
+    padding: 10px;
+    
+}
+.portifolio-texto p{
+    color: black;
+    padding-top: 10px;
+}
+
 /* .portifolio-container{
     max-width: 1100px;
     display: grid;
