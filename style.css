@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url( 'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 *,
 *::after,
@@ -10,13 +11,17 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);
+   /*  box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116); */
 }
 
 /* Estilo Geral */
 body{
-    background-image:linear-gradient(to bottom, #cdedf370, #bfeff894 );
-}
+    /* background-image:linear-gradient(to bottom, #cdedf370, #bfeff894 ); */
+   /*  background-image: url(/img/pexels-ksenia-chernaya-5691697.jpg);*/
+  /*  background-image: url(/img/pexels-erik-mclean-6159732.jpg); */
+  /* background-image: url(/img/fundo1.jpg); */
+  background-image: url(/img/fundo2.jpg);
+} 
 
 li{
     list-style: none;
@@ -29,9 +34,15 @@ a{
 a:hover{
     color: var(--colorBlue-dark);
 }
+h2{
+    color: var(--colorBlue-dark);
+    font-family: var(--font3);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
 h3{
-   /*  color: var(--colorBlue-dark); */
-    font-family: var(--font1);
+    /* color: var(--colorBlue-dark); */
+    font-family: var(--font3);
     font-size: 1.3rem;
 }
 h4{
@@ -55,6 +66,7 @@ hr{
     /* font */
     --font1: 'Raleway', sans-serif;
     --font2: 'Lato', sans-serif;
+    --font3: 'Oswald', sans-serif;
 }
 
 /* Header */
@@ -112,7 +124,7 @@ hr{
     font-family:var(--font2);
     font-size: 2.5rem;
     line-height: 60px;
-    color: rgb(90, 90, 90);
+    color: #686868
 }
 .sobre__description-titulo{
     display: flex;
@@ -133,6 +145,7 @@ hr{
 .sobre__description p{
     display: flex;
     text-align: center;
+    font-size: 1.1rem;
     /* color: white; */
     color: rgb(90, 90, 90);
 
@@ -219,6 +232,7 @@ hr{
 }
 .portifolio-img{
     display: flex;
+    box-shadow: 2px 2px 7px #00000073;
 }
 .portifolio-img img{
     display: flex;
@@ -269,8 +283,11 @@ hr{
     
 }
 .portifolio-texto p{
-    color: black;
+    color: rgba(63, 61, 61, 0.911);
     padding-top: 10px;
+    font-family: var(--font3);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }
 
 /* .portifolio-container{
@@ -384,4 +401,5 @@ footer{
 }
 .contato h3,p{
     color: white;
+    font-family: var(--font2);
 }
