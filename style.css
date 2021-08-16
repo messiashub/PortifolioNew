@@ -11,15 +11,11 @@
 *{
     margin: 0px;
     padding: 0px;
-   /*  box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116); */
+    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.116);
 }
 
 /* Estilo Geral */
-body{
-    /* background-image:linear-gradient(to bottom, #cdedf370, #bfeff894 ); */
-   /*  background-image: url(/img/pexels-ksenia-chernaya-5691697.jpg);*/
-  /*  background-image: url(/img/pexels-erik-mclean-6159732.jpg); */
-  /* background-image: url(/img/fundo1.jpg); */
+body{    
   background-image: url(/img/fundo2.jpg);
 } 
 
@@ -75,6 +71,7 @@ hr{
 /* Header */
 .menu-bg{
     background-color: var(--colorGray);
+    padding: 10px;
 }
 .menu{
     display: flex;
@@ -229,7 +226,6 @@ hr{
     display: flex;
     position: relative;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 10px;
     
@@ -242,19 +238,17 @@ hr{
 .portifolio-img img{
     display: flex;
     object-fit: cover;
-   /*  width: 430px; */
-   width: 100%;
+    width: 100%;
 }
 .portifolio-content1{
     position: absolute;
-    display: flex;
-    
+    display: flex;  
     width: 430px;
     height: 305px;
     overflow: hidden;
     
 }
-@media screen and (max-width: 471px){
+@media screen and (max-width: 494px){
     .menu{
         display: flex;
         flex-direction: column;
@@ -268,7 +262,7 @@ hr{
         display: block;
     }
     .nav__link{
-        padding: 0px 10px;
+        padding: 0px 5px;
     }
     .sobre__description-name{
         font-size: 1.7rem;
@@ -295,14 +289,10 @@ hr{
     height: 100%;
     padding: 35px 10px 10px 10px;
     bottom: 610px;
-
     backdrop-filter:  brightness(50%);
     transition: bottom 0.9s;
-    /* transition-delay: 0.5s; */
     transition-timing-function: ease;
-    /* transition: backdrop-filter 5s; */
     z-index: 10;
-    /* padding: 10px; */
 }
 .line hr{
     width: 100%;
@@ -311,21 +301,15 @@ hr{
     background-color: rgba(255, 255, 255, 0.329);
 }
 .portifolio-content1:hover .portifolio-content2{
-    bottom: 0px;
-   /*  display: block; */
-    /* transition-delay: 0s; */
-   
+    bottom: 0px;  
 }
 .portifolio-contentText > h4{
     font-size: 1.1rem;
-
 }
 .portifolio-texto{
-   /*  max-width: 300px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+    align-items: center; 
     margin: 5px 20px 20px 20px;
     padding: 5px 10px 10px 10px;
     
@@ -354,102 +338,6 @@ hr{
     letter-spacing: 1px;
 }
 
-/* .portifolio-container{
-    max-width: 1100px;
-    display: grid;
-    grid-template-columns: repeat(3,3fr);
-    margin: 0 auto;
-    gap: 20px;
-    flex-wrap: wrap;    
-} */
-/* .portifolio-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 352px;
-    height: 490px;
-} */
-/* .portifolio-wrapper2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1px;
-    padding: 5px;
-    height: 490px;
-    border: 1px solid rgba(0, 0, 0, 0.226);
-} */
-/* .portifolio-wrapper2 h3{
-    color: var(--colorGray);
-} */
-/* .portifolio-container .portifolio-card {
-    position: relative;
-    width: 310px;
-    height: 412px;
-    margin-bottom: 10px;
-    overflow: hidden;
-} */
-/* .portifolio-container .portifolio-card:hover .portifolio-content {
-    bottom: 0px;
-    /* transition-delay: 0s; 
-} */
-/* .portifolio-container .portifolio-card .portifolio-content{
-    position: absolute;
-    padding: 30px 0px 30px 0px;
-    bottom: 412px;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    backdrop-filter: brightness(25%);
-    transition: bottom 0.6s;
-    
-    /* transition-delay: 0.8s; 
-} */
-/* .portifolio-contentText{
-    color: rgb(255, 255, 255);
-    margin-left: 10px;
-} */
-/* .portifolio-content .linha2{
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.541);
-    height: 1px;
-    border: none;
-    margin: 5px 10px 5px 10px;
-    width: 94%;
-} */
-/* .portifolio-content ul li{
-    margin-left: 10px;
-    color: rgb(255, 255, 255);
-    font-family: var(--font1);
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-} */
-/* .portifolio-content .portifolio-btn{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-.portifolio-btn button{
-    font-family: var(--font1);
-    font-weight: bolder;
-    font-size: 1rem;
-    padding: 5px 15px;
-} */
-
-
-/* .portifolio__img{
-    display: flex;
-    width: 100%;
-    justify-content: center;   
-}
-.portifolio__img img{
-    border: 1px solid rgba(144, 144, 144, 0.24);
-}
-.portifolio-card span{
-    display: flex;
-    justify-content: center;
-
-} */
 
 /* Footer */
 footer{
