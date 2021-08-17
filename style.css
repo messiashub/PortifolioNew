@@ -248,36 +248,7 @@ hr{
     overflow: hidden;
     
 }
-@media screen and (max-width: 494px){
-    .menu{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100px;
-    }
-    .nav__list{
-        margin-bottom: 20px;
-    }
-    .portifolio-container{
-        display: block;
-    }
-    .nav__link{
-        padding: 0px 5px;
-    }
-    .sobre__description-name{
-        font-size: 1.7rem;
-    }
-    .sobre__description-titulo{
-        max-width: 320px;
-    }
-    .portifolio-img{
-        max-width: 330px;
-    }
-    .portifolio-content1{
-        max-width: 330px;
-        max-height: 234px;
-    }
-}
+
 
 
 .portifolio-content2{
@@ -354,4 +325,51 @@ footer{
 .contato h3,p{
     color: white;
     font-family: var(--font2);
+}
+
+@media screen and (max-width: 494px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+    }
+    .nav__list{
+        margin-bottom: 20px;
+    }
+    .portifolio-container{
+        display: block;
+    }
+    .nav__link{
+        padding: 0px 5px;
+    }
+    .sobre__description-name{
+        font-size: 1.7rem;
+    }
+    .sobre__description-titulo{
+        max-width: 320px;
+    }
+    .portifolio-img{
+        max-width: 330px;
+    }
+    .portifolio-content1{
+        max-width: 330px;
+        max-height: 234px;
+    }
+    .footer_container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer_container .contato{
+        margin: 10px;
+    }
+    .footer_container .contato_copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 10px;
+        
+    }
 }
