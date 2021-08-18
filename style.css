@@ -11,7 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.192);
+   /*  box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.192); */
 }
 
 /* Estilo Geral */
@@ -187,14 +187,19 @@ hr{
 }
 .tecnologias li{
     display: flex;
-    color:#f64a13;
+    flex-direction: column;
+    align-items: center;
+    color: var(--colorBlue-dark);
     font-size: 1.1rem;
+    font-weight: bold;
     margin: 0px 10px;
     justify-content: center;
+    font-family: var(--font3);
+    letter-spacing: 0.1rem;
     width: 105px;
     padding: 5px;
-    border: 2px solid var(--colorBlue-dark);
-    border-radius: 15px;
+    /* border: 2px solid var(--colorBlue-dark); */
+   /*  border-radius: 15px; */
 }
 
 /* Portifolio */
@@ -338,11 +343,27 @@ footer{
     color: white;
     font-weight: normal;
 }
+.contato a:hover{
+    cursor: pointer;
+    color: var(--colorBlue-dark);
+}
 .contato_copy{
     min-width: 300px;
 }
+.contato a:hover p{
+    cursor: pointer;
+    color: var(--colorBlue-dark);
+}
+/* @media screen and (max-width: 575px){
+    .footer_container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+} */
 
-@media screen and (max-width: 494px){
+
+@media screen and (max-width: 593px){
     .menu{
         display: flex;
         flex-direction: column;
@@ -382,6 +403,13 @@ footer{
         align-items: center;
         margin: 10px;
     }
+    .contato > h3{
+        margin-bottom: 10px;
+
+    }
+    .contato > hr{
+        display: none;
+    }
     .footer_container .contato_copy{
         display: flex;
         flex-direction: column;
@@ -391,3 +419,5 @@ footer{
         
     }
 }
+
+
