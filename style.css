@@ -167,6 +167,11 @@ hr{
     font-family: var(--font2);
     justify-content: flex-end;
 }
+.git{
+    display: flex;
+    justify-content: center;
+    color: #686868;
+}
 .sobre__description-texto{
     width: 100%;
     margin-top: 50px;
