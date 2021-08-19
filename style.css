@@ -11,7 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
-   /*  box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.192); */
+    /* box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.192); */
 }
 
 /* Estilo Geral */
@@ -94,9 +94,38 @@ hr{
     color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
-    padding:0px 20px;
+    padding:5px 20px;
     margin: 5px;
+
+    position: relative;
 }
+.nav__link:before,
+.nav__link:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    transition:transform 0.3s ease-in-out;
+}
+.nav__link:before{
+    border-left: 1px solid var(--colorBlue-dark);
+    border-right: 1px solid var(--colorBlue-dark);
+    transform: scaleY(0);
+}
+.nav__link:after{
+    border-top: 1px solid var(--colorBlue-dark);
+    border-bottom: 1px solid var(--colorBlue-dark);
+    transform: scaleX(0);
+}
+.nav__link:hover::before{
+    transform: scaleY(1);
+}
+.nav__link:hover::after{
+    transform: scaleX(1);
+}
+
 /* sobre */
 
 .sobre{
@@ -144,7 +173,7 @@ hr{
     padding: 5px;
 }
 .sobre__description  p{
-    display: flex;
+    /* display: flex; */
     text-align: center;
     font-size: 1.1rem;
     /* color: white; */
@@ -179,6 +208,9 @@ hr{
     padding: 10px;
     font-size: 2rem;
 }
+.conhecimentos__tec{
+    margin: 20px auto;
+}
 .tecnologias{
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +241,7 @@ hr{
 .portifolio__titulo{
     display: flex;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 15px auto;
     justify-content: center;
 }
 .portifolio__titulo h3{
@@ -384,6 +416,9 @@ footer{
     }
     .sobre__description-titulo{
         max-width: 320px;
+    }
+    .sobre__description  p{
+        text-align: justify;
     }
     .portifolio-img{
         max-width: 330px;
