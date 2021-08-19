@@ -11,7 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.192); */
+    box-shadow: 0px 0px 0px 1px rgba(255, 99, 85, 0.192);
 }
 
 /* Estilo Geral */
@@ -170,7 +170,16 @@ hr{
 .git{
     display: flex;
     justify-content: center;
+}
+.git a{
+   
+    width: 42px;
+    height: 48px;
+   
     color: #686868;
+}
+.git a:hover{
+    color: var(--colorBlue-dark);
 }
 .sobre__description-texto{
     width: 100%;
