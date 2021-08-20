@@ -47,7 +47,7 @@ body{
 .container .card:hover .content{
     bottom: 0px;
 } */
-.conteudo{
+/* .conteudo{
     max-width: 1900px;
     margin: 0 auto;
     display: grid;
@@ -64,4 +64,63 @@ body{
     width: 100%;
     height: 305px;
     object-fit: cover;
+} */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 430px;
+    height: 305px;
+    overflow: hidden;
+    margin: 25px;
+}
+.teste{
+    width: 430px;
+    /* height: 100%; */
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+.teste:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+#modal_img{
+    width: 30vw;
+    transform: scale(0);
+}
+.modal_active #modal_img{
+    transform: scale(1);
+
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#btn_close{
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+
+}
+.modal_active{
+    visibility: visible;
+    opacity: 1;
 }
