@@ -108,44 +108,104 @@
             </div>
         </div>
     </div>-->
-
-    <div class="modal">
-        <div class="modal_content">
-            <img src="" id="modal_img">
-        </div>
-        <span id="btn_close">x</span>
-        
-    </div>
-
     <div class="container">
-        <div class="img">
-            <img src="imgteste/cursoemVideoG1.png" alt="" class="teste">
+        <div class="wrapper">
+            <div class="content-img">
+                <img class="img2 tamanho" src="/imgteste/cursoemVideoG1.png" width="894px" height="1398px" alt="">
+            </div>
+            <div class="content-info">
+                <div class="content-info2">
+                    <div class="contentText">
+                        <h4>Serviços</h4>
+                    </div>
+                    <div class="btn-ampliar">
+                        <button class="btn">ampliar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="texto">
+                <p>yyyyyyy</p>
+            </div>
         </div>
-        <div class="img">
-            <img src="imgteste/cursoemVideoG1.png" alt=""class="teste">
+        <div class="wrapper">
+
+            <div class="content-img">
+                <img class="img2 tamanho" src="/imgteste/cursoemVideoG1.png" alt="">
+            </div>
+            <div class="content-info">
+                <div class="content-info2">
+                    <div class="contentText">
+                        <h4>Serviços</h4>
+                    </div>
+                    <div class="btn-ampliar">
+                        <button class="btn">ampliar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="texto">
+                <p>bbbbbbb</p>
+            </div>
         </div>
-        <div class="img">
-            <img src="imgteste/cursoemVideoG1.png" alt=""class="teste">
+        <div class="wrapper">
+            <div class="content-img">
+                <img class="img2 tamanho" src="/imgteste/cursoemVideoG1.png" alt="">
+            </div>
+            <div class="content-info">
+                <div class="content-info2">
+                    <div class="contentText">
+                        <h4>Serviços</h4>
+                    </div>
+                    <div class="btn-ampliar">
+                        <button class="btn">ampliar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="texto">
+                <p>bbbbbbb</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content-img">
+                <img class="img2 tamanho" src="/img/cursoemVideoP.png" alt="">
+            </div>
+            <div class="content-info">
+                <div class="content-info2">
+                    <div class="contentText">
+                        <h4>Serviços</h4>
+                    </div>
+                    <div class="btn-ampliar">
+                        <button class="btn">ampliar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="texto">
+                puuuuuu
+            </div>
         </div>
     </div>
+    <div class="modal">
+        <div class="conteudo-modal">
+            <img src="" alt="" id="modal-img">
+        </div>
+        <span class="btn-close">x</span>
+    </div>
+
 
     <script>
-        let imagem = document.querySelectorAll(".teste");
+        let imagens = document.querySelectorAll('.img2');
+        let btn = document.querySelectorAll('.btn');
         let modal = document.querySelector('.modal');
-        let modalImg = document.querySelector("#modal_img");
-        let btClose = document.querySelector('#btn_close');
-        let srcVal="";
+        let modalImag = document.querySelector('#modal-img');
+        let srcValor= ""
 
-        for(let i=0; i < imagem.length;i++){
-            imagem[i].addEventListener('click', function(){
-                srcVal = imagem[i].getAttribute('src');
-                modalImg.setAttribute('src',srcVal);
-                modal.classList.toggle('modal_active')
-            })
+        for(let i=0; i < btn.length; i++){
+            btn[i].addEventListener('click', function(){
+                 srcValor =imagens[i].getAttribute('src');
+                 modalImag.setAttribute("src",srcValor);
+                 modal.classList.toggle('modal_active');
+            });
+           
         }
-        btClose.addEventListener('click',function(){
-            modal.classList.toggle('modal_active');
-        })
     </script>
 </body>
 
