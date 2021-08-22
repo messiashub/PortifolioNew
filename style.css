@@ -208,7 +208,6 @@ hr{
 }
  .sobre__img img{
     max-width: 240px;
-    
 } 
 .conhecimentos{
     max-width: 1100px;
@@ -247,10 +246,7 @@ hr{
     letter-spacing: 0.1rem;
     width: 105px;
     padding: 5px;
-    /* border: 2px solid var(--colorBlue-dark); */
-   /*  border-radius: 15px; */
 }
-
 /* Portifolio */
 .portifolio{
     margin-bottom: 20px;
@@ -273,8 +269,7 @@ hr{
     margin: 0 auto;
     padding: 20px;
     justify-content: center;
-    gap: 20px;
-    
+    gap: 20px;  
 }
 .portifolio-wrapper{
     display: flex;
@@ -287,6 +282,7 @@ hr{
 .portifolio-img{
     display: flex;
     width: 430px;
+    height: 305px;
     box-shadow: 2px 2px 7px #00000073;
 }
 .portifolio-img img{
@@ -300,10 +296,7 @@ hr{
     width: 430px;
     height: 305px;
     overflow: hidden;
-    
 }
-
-
 
 .portifolio-content2{
     position: absolute;
@@ -403,6 +396,51 @@ footer{
     cursor: pointer;
     color: var(--colorBlue-dark);
 }
+#modal-img{
+    width: 60vw;
+    border: 2px solid white;
+}
+.modal{
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, .7);
+   position: fixed;
+   visibility: hidden;
+   z-index: 99999;
+   opacity: 0; 
+   top: 0;
+}
+.modal span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+.btn-close{
+    
+    font-size: 1.3rem;
+    font-family: var(--font2);
+    color: white;
+
+}  
+.conteudo-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.modal_active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    justify-content: center;  
+}
+ 
+
 /* @media screen and (max-width: 575px){
     .footer_container{
         display: flex;
@@ -439,6 +477,8 @@ footer{
     }
     .portifolio-img{
         max-width: 330px;
+        max-height: 234px;
+        
     }
     .portifolio-content1{
         max-width: 330px;
