@@ -99,7 +99,6 @@ hr{
     text-transform: uppercase;
     padding:5px 20px;
     margin: 5px;
-
     position: relative;
 }
 .nav__link:before,
@@ -343,7 +342,6 @@ hr{
     display: flex;
     justify-content: center;
     margin-top: 45px;
-
 }
 .portifolio-btn button{
     padding: 5px 10px;
@@ -354,6 +352,11 @@ hr{
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 1px;
+    cursor: pointer;
+}
+.portifolio-btn button:hover{
+    background-color: var(--colorBlue-dark);
+    color: white;
 }
 
 
@@ -399,6 +402,8 @@ footer{
 #modal-img{
     width: 60vw;
     border: 2px solid white;
+    transform: scale(0);
+    transition: all linear .3s;
 }
 .modal{
    width: 100vw;
@@ -409,6 +414,10 @@ footer{
    z-index: 99999;
    opacity: 0; 
    top: 0;
+   transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+.modal_active #modal-img{
+    transform: scale(1);
 }
 .modal span{
     display: flex;
@@ -425,7 +434,8 @@ footer{
     font-size: 1.3rem;
     font-family: var(--font2);
     color: white;
-
+    /* transition: ease-out .3s; */
+    
 }  
 .conteudo-modal{
     display: flex;
@@ -437,7 +447,8 @@ footer{
     display: flex;
     visibility: visible;
     opacity: 1;
-    justify-content: center;  
+    justify-content: center;
+    /* transition: 0.3s;   */
 }
  
 
