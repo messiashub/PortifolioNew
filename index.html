@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="style.css" as="style">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <title>Document</title>
 </head>
 
@@ -41,9 +45,10 @@
                         <p>Desenvolvedor Front End</p>
                     </div>
                     <div class="git">
-                        <a href="http://github.com/messiashub" target="_blank"> <i class="fa fa-github fa-3x" aria-hidden="true"></i></a> 
+                        <a href="http://github.com/messiashub" target="_blank" rel="noopener" alt="github"><i
+                                class="fa fa-github fa-3x" aria-hidden="true"></i></a>
                     </div>
-                   
+
                     <div class="sobre__description-texto">
                         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos ipsa laudantium
                             inventore nesciunt excepturi odit ab. Accusantium, alias quos optio, sed id explicabo, dicta
@@ -52,7 +57,8 @@
                             laudantium
                             inventore nesciunt excepturi odit ab. Accusantium, alias quos optio, sed id explicabo, dicta
                             doloribus maiores laudantium beatae ipsa!</p> -->
-                            <p>Sou apaixonado por tecnologia e gosto de me aprimorar todos os dias como profissional e como pessoa. Gosto de desafios e trabalhar com coisas novas constantemente.</p>
+                        <p>Sou apaixonado por tecnologia e gosto de me aprimorar todos os dias como profissional e como
+                            pessoa. Gosto de desafios e trabalhar com coisas novas constantemente.</p>
                     </div>
                 </div>
             </div>
@@ -82,13 +88,29 @@
             <div class="portifolio__titulo">
                 <h2>Portifólio</h2>
             </div>
-            
-            <div class="portifolio-container">
+            <!-- <img src="/img/cursoemVideoP.png" max-width="430" max-height="305" alt=""> -->
+            <!--  <img src="/imgteste/cursoemVideoG1.png" alt=""> -->
+
+            <class class="portifolio-container">
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <!-- <img src="/img/cursoemVideoP.png" max-width="430" max-height="305" alt=""> -->
-                       <!--  <img src="/imgteste/cursoemVideoG1.png" alt=""> -->
-                       <img class="img" src="/img/cursoVideo.png" alt="">
+                        <picture>
+                            <source media="(max-width:593px)" srcset="/img/cursoVideoP.png">
+                            <img class="img" src="/img/cursoVideo.png"alt="">
+                        </picture>                     
+                    </div>
+
+
+                </div>
+
+
+                <!--  <div class="portifolio-wrapper">
+                    <div class="portifolio-img">
+                        
+                       <picture>
+                           <source media="(max-width:593px )" srcset="/img/cursoemVideoP.png">
+                       </picture>
+                       <img class="img" src="/img/cursoVideo.png" max-width="430px" max-height="305px" alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -117,7 +139,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img"  src="/img/frontbox.png" alt="">
+                        <img class="img"  src="/img/frontbox.png"  max-width="430px" max-height="305px" alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -146,7 +168,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img" src="/img/newforce.png"  alt="">
+                        <img class="img" src="/img/newforce.png"  max-width="430px" max-height="305px"  alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -177,7 +199,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img" src="/img/netiflix.png"  alt="">
+                        <img class="img" src="/img/netiflix.png" max-width="430px" max-height="305px" alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -206,7 +228,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img" src="/img/teste.png"  alt="">
+                        <img class="img" src="/img/frontbox.png" max-width="430px" max-height="305px"  alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -234,7 +256,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img" src="/img/teste.png" alt="">
+                        <img class="img" src="/img/frontbox.png"max-width="430px" max-height="305px" alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -262,7 +284,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img" src="/img/teste.png"  alt="">
+                        <img class="img" src="/img/frontbox.png" max-width="430px" max-height="305px" alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -291,7 +313,7 @@
                 </div>
                 <div class="portifolio-wrapper">
                     <div class="portifolio-img">
-                        <img class="img"  src="/img/teste.png" alt="">
+                        <img class="img"  src="/img/frontbox.png" max-width="430px" max-height="305px"  alt="">
                     </div>
                     <div class="portifolio-content1">
                         <div class="portifolio-content2">
@@ -317,27 +339,31 @@
                         <h3>FrontBox</h3>
                     </div>
                 </div>
-            </div> 
-              
-                    
+            </div>  -->
+
+
         </section>
-        
+
     </main>
     <div class="modal">
-                <div class="conteudo-modal">
-                    <img src="" alt="" id="modal-img">
-                    
-                </div>
-                <span class="btn-close">&times;</span>
-            </div>
-            
+        <div class="conteudo-modal">
+            <img src="" alt="" id="modal-img">
+
+        </div>
+        <span class="btn-close">&times;</span>
+    </div>
+
     <footer>
         <div class="footer_container">
             <div class="contato" id="contato">
                 <h3>CONTATO</h3>
-                <hr>   
-              <a href="tel:+5511956405581"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;(11)1111-1111</a>
-              <a href="mailto:claudineimessias@hotmail.com"><p></p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp; claudineimessias@hotmail.com</p></a> 
+                <hr>
+                <a href="tel:+5511956405581"><i class="fa fa-whatsapp fa-lg"
+                        aria-hidden="true"></i>&nbsp;&nbsp;(11)1111-1111</a>
+                <a href="mailto:claudineimessias@hotmail.com">
+                    <p></p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp; claudineimessias@hotmail.com
+                    </p>
+                </a>
             </div>
             <div class="contato_copy">
                 <p>&copy; Copyright 2021 por Claudinei Messias.</p>
