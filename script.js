@@ -5,11 +5,15 @@ let modal = document.querySelector('.modal');
 let modalImg = document.querySelector('#modal-img');
 let btnClose = document.querySelector('.btn-close');
 let valorSrc = "";
+let fotos = fotosJson;
 
 for(let i =0; i < button.length; i++){
     button[i].addEventListener('click',function(){
         console.log('olá');
-        valorSrc = imagens[i].getAttribute('src');
+        
+       /*  console.log(fotos[i]['src']); */
+       
+        valorSrc = fotos[i]['src'];/* .getAttribute('src'); */
         modalImg.setAttribute('src',valorSrc);
         modal.classList.toggle('modal_active');
     })
@@ -17,4 +21,11 @@ for(let i =0; i < button.length; i++){
 btnClose.addEventListener('click',function(){
     console.log('olá de novo');
     modal.classList.toggle('modal_active');
-})
+});
+
+
+
+
+/* console.log(fotos[0].src);
+ */
+
