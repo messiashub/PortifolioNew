@@ -1,8 +1,8 @@
 let fotosJson = [
-    {id:1, src:'/img/cursoVideo.png', nome:'cursoVideo'},
-    {id:2, src:'/img/frontbox.png'},
-    {id:3, src:'img/newforce.png'},
-    {id:4, src:'img/netiflix.png'},
+    {id:1, 'src':'/imgG/cursoVideoG.png'},
+    {id:2, 'src':'/imgG/frontboxG.png'},
+    {id:3, 'src':'/imgG/newforceG.png'},
+    {id:4, 'src':'/imgG/netflixG.png'},
 
 ];
 

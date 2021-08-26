@@ -290,7 +290,8 @@ hr{
     box-shadow: 2px 2px 7px #00000073;
 } */
 .portifolio-img picture{
-    display: flex;
+    /* display: flex; */
+    display: block;
     width: 430px;
     height: 305px;
     box-shadow: 2px 2px 7px #00000073;
@@ -518,6 +519,7 @@ footer{
     }  */
     .portifolio-img picture{
        /*  display: none; */
+        display: flex;
         max-width: 310px;
         max-height: 235px;
     }
