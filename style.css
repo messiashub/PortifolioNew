@@ -159,6 +159,7 @@ hr{
     line-height: 60px;
     color: #686868
 }
+
 .sobre__description-titulo{
     display: flex;
     max-width: 460px;
@@ -269,7 +270,7 @@ hr{
 .portifolio-container{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 2fr));
     margin: 0 auto;
     padding: 20px;
     justify-content: center;
