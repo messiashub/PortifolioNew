@@ -13,7 +13,7 @@ for(let i =0; i < button.length; i++){
         
        /*  console.log(fotos[i]['src']); */
        
-        valorSrc = fotos[i]['src'];/* .getAttribute('src'); */
+        valorSrc = fotos[i]['src'];/* .getAttribute('src') */;
         modalImg.setAttribute('src',valorSrc);
         modal.classList.toggle('modal_active');
     })
@@ -22,6 +22,12 @@ btnClose.addEventListener('click',function(){
     console.log('olá de novo');
     modal.classList.toggle('modal_active');
 });
+
+
+const loader = document.querySelector('.loader');
+window.addEventListener('load',()=>{
+    loader.style.display= 'none';
+})
 
 
 
