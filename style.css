@@ -339,8 +339,11 @@ hr{
 .portifolio-content1:hover .portifolio-content2{
     bottom: 0px;  
 }
-.portifolio-contentText > h4{
+.portifolio-contentText > h1{
+    font-family: var(--font2);
+    font-weight: lighter;
     font-size: 1.1rem;
+    color: white;
 }
 .portifolio-texto{
     display: flex;
@@ -524,6 +527,9 @@ footer{
         max-width: 310px;
         max-height: 235px;
     }
+    .portifolio-img img {
+        height: 235px;
+    }    
    
     .portifolio-content1{
         max-width: 310px;
