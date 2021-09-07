@@ -23,7 +23,6 @@ btnClose.addEventListener('click',function(){
     modal.classList.toggle('modal_active');
 });
 
-
 const loader = document.querySelector('.loader');
 window.addEventListener('load',()=>{
     loader.style.display= 'none';
