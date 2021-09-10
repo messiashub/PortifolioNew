@@ -198,10 +198,10 @@ hr{
     width: 210px;
     height: 210px;
     margin: 30px 0px 30px 0px;
-    border: 1px solid rgb(93, 93, 228);
     border-radius: 50%;
     object-fit: contain;
     overflow: hidden;
+    box-shadow: 2px 1px 6px 0px #00000059;
 }
  .sobre__img img{
     width: 210px;
