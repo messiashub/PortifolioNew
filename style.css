@@ -80,7 +80,6 @@ hr{
     color: rgb(250, 250, 250);
     font-size: 2rem;
 }
-
 .nav__list{
     display: flex;
     flex-wrap: wrap;
@@ -496,8 +495,11 @@ footer{
         align-items: center;
         height: 100px;
     }
+    .menu__logo{
+        margin-top: 10px;
+    }
     .nav__list{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .portifolio-container{
         display: block;
