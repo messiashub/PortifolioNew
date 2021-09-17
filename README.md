@@ -29,17 +29,25 @@
 
 <a href="https://messiashub.github.io/PortifolioNew/" target="_blank" rel="noopener noreferrer">PortifolioNew</a>
 
-![portflio](https://user-images.githubusercontent.com/71287461/133514475-34b19ff0-4159-4a72-9b18-3e1168e22a6b.png)
+
+<div align="center">
+ <img alt="imagem" src="./gifs/Portfolio.gif" width="500px">
+
+ ***
+ <img alt="imagem2" src="./gifs/Portfolio2.gif" width="500px">
+
+ ***
+
+ <img alt="imagem3" src="./gifs/Mobile.gif" width="200px">
+</div>
+
+
+
 ***
 
 
-![Alt](./gifs/Portfolio.gif)
 
-***
 
-![Alt](./gifs/Portfolio2.gif)
 
-***
 
-![Alt](./gifs/Mobile.gif)
 
