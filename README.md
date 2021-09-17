@@ -33,6 +33,13 @@
 ***
 
 
-![Alt](./icones/Portfolio.gif)
+![Alt](./gifs/Portfolio.gif)
 
+***
+
+![Alt](./gifs/Portfolio2.gif)
+
+***
+
+![Alt](./gifs/Mobile.gif)
 
