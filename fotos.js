@@ -5,6 +5,8 @@ let fotosJson = [
     {id:4, 'src':'./imgG/netflixG.png'},
     {id:5, 'src':'./imgG/netflixG.png'},
     {id:6, 'src':'./imgG/wildbeastG.png'},
+    {id:7, 'src':'./imgG/netflixG.png'},
+    {id:8, 'src':'./imgG/netflixG.png'},
 
 ];
 

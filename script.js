@@ -7,19 +7,28 @@ let btnClose = document.querySelector('.btn-close');
 let valorSrc = "";
 let fotos = fotosJson;
 
-for(let i =0; i < button.length; i++){
+button.forEach(function(botao,indice){
+    botao.addEventListener('click',function(){
+    valorSrc = fotos[indice]["src"];
+    modalImg.setAttribute('src',valorSrc);
+    modal.classList.toggle('modal_active');
+    console.log(indice);
+    })
+})
+/* for(let i =0; i < button.length; i++){
     button[i].addEventListener('click',function(){
         console.log('olá');
-        
-       /*  console.log(fotos[i]['src']); */
        
-        valorSrc = fotos[i]['src'];/* .getAttribute('src') */;
+        valorSrc = fotos[i]['src'];
         modalImg.setAttribute('src',valorSrc);
         modal.classList.toggle('modal_active');
     })
-}
+} */
+
+
+/* .getAttribute('src') */;
+ /*  console.log(fotos[i]['src']); */
 btnClose.addEventListener('click',function(){
-    console.log('olá de novo');
     modal.classList.toggle('modal_active');
 });
 
