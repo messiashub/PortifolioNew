@@ -35,7 +35,7 @@
 
 
 <p>Para visualizar o Portfolio no navegador  👉
-<a href="https://messiashub.github.io/PortifolioNew/" target="_blank" rel="noopener noreferrer">PortifolioNew</a></p>
+<a href="https://messiashub.github.io/PortifolioNew/" target="_blank" rel="noopener noreferrer">PortfolioNew</a></p>
 
 
 <div align="center">
