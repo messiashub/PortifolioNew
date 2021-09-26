@@ -44,8 +44,7 @@ h2{
 
 hr{
     border: none;
-    max-width: 1500px;
-    
+    max-width: 1500px;   
     height: 2px;
     background-color: var(--colorBlue-dark);
     margin: 20px auto;
@@ -467,7 +466,7 @@ footer{
     visibility: visible;
     opacity: 1;
     justify-content: center;
-    /* transition: 0.3s;   */
+    transition: 1s;  
 }
 
 .loader{
